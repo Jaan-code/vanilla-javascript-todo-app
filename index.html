@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+    <title>Tasks List</title>
+  </head>
+  <body>
+    <section class="buttons_container">
+      <button type="button" id="shownotes">Mostrar notas</button>
+      <button type="button" id="showschedule">Mostrar horario</button>
+    </section>
+
+    <div class="todo_container">
+      <h2 id="title"></h2>
+      <div class="input_container">
+          <input type="text" id="todo_input" placeholder="ingresa una tarea">
+          <label for="time_input">Horas: </label>
+          <input type="number" id="time_input" placeholder="0">
+          <button type="button" id="save_todo">Guardar</button>
+      </div>
+      <div id="tasks">
+      </div>
+    </div>
+
+    <div contenteditable="true" id="notes"></div>
+    <div id="schedule">
+      <div id="content">
+
+      </div>
+      <button type="button" id="startschedule">Iniciar Horario</button>
+      <p></p>
+      <button type="button" id="cleanchedule">Limpiar Horario</button>
+    </div>
+
+    <script type="text/javascript" src="code.js"></script>
+  </body>
+</html>
